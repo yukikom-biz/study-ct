@@ -1,22 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import {render} from "react-dom";
-// import ConstSimpleMessage from "../ConstSimpleMessage";
-//
-// it('no props component', function () {
-//     render(<ConstSimpleMessage />)
-// });
+import {render} from '@testing-library/react'
 
 test('supports fragments', () => {
-    class Test extends React.Component {
-        render() {
-            return (
-                <div>
+    function Test() {
+        return (
+            <div>
                 <code>DocumentFragment</code> is pretty cool!
-                </div>
+            </div>
         )
-        }
     }
-    const {asFragment} = render(<Test />)
+    const {asFragment} = render(<Test/>);
     expect(asFragment()).toMatchSnapshot()
-})
+});
