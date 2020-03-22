@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+<!--    <link rel="shortcut icon" href="assets/favicon.ico" />-->
+    <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"
+    />
+    <title>挑戦する人のサイト</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/es6-promise/3.3.1/es6-promise.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+    <script src="//polyfill.io/v3/polyfill.min.js?features=IntersectionObserver%2CObject.entries"></script>
+
+    <style>
+        .root-loading-view {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+<div id="root">
+    <div class="root-loading-view">
+        hello world.
+    </div>
+</div>
+</body>
+</html>

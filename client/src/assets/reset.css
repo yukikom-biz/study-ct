@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'メイリオ', Meiryo,
+    'ＭＳ Ｐゴシック', 'MS P Gothic', Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgb(255, 252, 223);
+    border: 1px solid rgb(223, 215, 125);
+}
