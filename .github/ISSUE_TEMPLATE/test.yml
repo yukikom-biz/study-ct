@@ -1,0 +1,58 @@
+name: koma2 issue template
+description: issue template.
+title: "[] "
+labels: [bug]
+assignees:
+  - yukikom-biz
+body:
+  - type: markdown
+    attributes:
+      value: |
+        create new issue is progress
+  - type: input
+    id: ticket url
+    attributes:
+      label: ticket url
+      description: Input Jira ticket URL
+      placeholder: ex. https://....
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: As-is / To-be
+      description: タスク概要を記入してください
+      placeholder: Tell us what to do
+    validations:
+      required: false
+  - type: textarea
+    id: task
+    attributes:
+      label: タスク詳細
+      description: タスク詳細
+      value: |
+        - [ ] 調査
+            - [ ]
+        - [ ] 実装
+            - [ ] backend
+                - [ ]
+            - [ ] frontend
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: DOS
+    attributes:
+      label: DONE Of Sprint
+      description: タスク詳細
+      value: |
+        - [ ] 検証
+        - [ ] AC確認
+            - [ ]
+      render: markdown
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        - 責務分離が出来ている前提で、共通化して重複コードなどを解消していること
