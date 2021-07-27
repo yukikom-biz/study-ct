@@ -10,7 +10,7 @@ body:
       value: |
         create new issue is progress
   - type: input
-    id: ticket url
+    id: ticket_url
     attributes:
       label: ticket url
       description: Input Jira ticket URL
